@@ -1,6 +1,8 @@
 def nyc_pigeon_organizer(data)
   data.map { |top_category, sub_category|
-    p sub_category
+    sub_category.map { |name| 
+      p name
+    }
   }
 end
 
