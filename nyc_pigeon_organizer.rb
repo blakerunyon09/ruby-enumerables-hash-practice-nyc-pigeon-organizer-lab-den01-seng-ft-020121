@@ -3,14 +3,13 @@ def nyc_pigeon_organizer(data)
   counter = 0
   #creates hash of names without values
   data[:color].values.map { |e|
-    p e
     e.map { |e|
       new_hash[e] = []
      }
   }
   #adds values to hashes
   p new_hash.each { |e|
-
+    e
   }
 end
 
