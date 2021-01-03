@@ -1,21 +1,20 @@
 def nyc_pigeon_organizer(data)
   pigeon_list = {}
-  data.map { |top_category, sub_category|
-    sub_category.map { |sub_category, names|
-      names.each { |name|
-        if pigeon_list[name] === nil
+  data.each do |color_gender_lives, value|
+    value.each do |stats, all_names|
+      all_names.each do |name|
+        if pigeon_list[name] == nil
           pigeon_list[name] = {}
         end
-        if pigeon_list[name][top_category] === nil
-          pigeon_list[name][top_category] == []
+        if pigeon_list[name][color_gender_lives] == nil
+          pigeon_list[name][color_gender_lives] = []
         end
-        pigeon_list[name][top_category].push(sub_category.to_s)
-      }
-    }
-  }
-  p pigeon_list
+        pigeon_list[name][color_gender_lives].push(stats.to_s)
+      end
+    end 
+  end
+  pigeon_list
 end
-
 pigeon_data = {
   :color => {
     :purple => ["Theo", "Peter Jr.", "Lucky"],
