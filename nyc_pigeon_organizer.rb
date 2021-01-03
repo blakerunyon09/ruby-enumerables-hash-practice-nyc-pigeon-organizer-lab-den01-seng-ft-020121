@@ -1,21 +1,7 @@
 def nyc_pigeon_organizer(data)
-  new_hash = {}
-  counter = 0
-  #creates hash of names without values
-  data[:color].values.map { |e|
-    e.map { |e|
-      new_hash[e] = []
-     }
+  date.map { |top_category, sub_category|
+    p top_category
   }
-  #adds values to hashes
-  new_hash.each { |e|
-    #e[0] gives "Theo"
-
-  }
-  if data[:color].values.any? { |e| e === "Theo" }
-    p "You got Theo"
-  end
-  p data[:color].values
 end
 
 pigeon_data = {
