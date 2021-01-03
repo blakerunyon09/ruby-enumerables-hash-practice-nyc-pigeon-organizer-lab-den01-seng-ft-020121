@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(data)
   }
   #adds values to hashes
   new_hash.each { |e|
-    p e
+    p e[0]
   }
 end
 
