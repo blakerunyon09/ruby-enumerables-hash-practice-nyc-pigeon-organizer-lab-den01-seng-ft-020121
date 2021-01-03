@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
     #e[0] gives "Theo"
 
   }
-  if data[:color].values.any? { |e|  }
+  if data[:color].values.any? { |e| e === "Theo" }
   end
   p data[:color].values
 end
