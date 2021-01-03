@@ -1,8 +1,16 @@
 def nyc_pigeon_organizer(data)
   pigeon_list = {}
   data.map { |top_category, sub_category|
-    sub_category.map { |sub_category, name|
-      p sub_category
+    sub_category.map { |sub_category, names|
+      names.each { |name|
+        if pigeon_list[name] === nil
+          pigeon_list[name] = {}
+        end
+        if pigeon_list[name][top_category] == nil
+          pigeon_list[name][top_category] == []
+        end
+        pigeon_list[name][top_category].push(sub_category.to_s)
+      }
     }
   }
 end
