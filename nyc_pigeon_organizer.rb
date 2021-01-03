@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
   }
   if data[:color].values.any? { |e|  }
   end
-  data[:color].values
+  p data[:color].values
 end
 
 pigeon_data = {
