@@ -9,8 +9,10 @@ def nyc_pigeon_organizer(data)
   }
   #adds values to hashes
   new_hash.each { |e|
-    p e[0]
+    #e[0] gives "Theo"
+    
   }
+  p data[:color].values
 end
 
 pigeon_data = {
