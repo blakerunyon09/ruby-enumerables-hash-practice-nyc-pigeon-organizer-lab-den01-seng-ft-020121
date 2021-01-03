@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
     #e[0] gives "Theo"
 
   }
-  p data[:color][1]
+  p data[:color][:purple]
 end
 
 pigeon_data = {
