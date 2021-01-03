@@ -13,6 +13,7 @@ def nyc_pigeon_organizer(data)
       }
     }
   }
+  p pigeon_list
 end
 
 pigeon_data = {
